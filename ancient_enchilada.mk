@@ -24,10 +24,11 @@ $(call inherit-product, device/oneplus/enchilada/device.mk)
 # Inherit some common AOSP stuff.
 $(call inherit-product, vendor/ancient/config/common_full_phone.mk)
 
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Gapps
 TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_WIFI_EXT := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_STOCK_ARCORE := true
 
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
